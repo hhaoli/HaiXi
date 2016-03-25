@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"/>
+
+    <RadioGroup
+        android:id="@+id/main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/gray_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/main_home"
+            style="@style/MainBottomTab"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_home"
+            android:text="@string/home"/>
+
+        <RadioButton
+            android:id="@+id/main_car"
+            style="@style/MainBottomTab"
+            android:drawableTop="@drawable/tab_car"
+            android:text="@string/car_select"/>
+
+        <RadioButton
+            android:id="@+id/main_contrast"
+            style="@style/MainBottomTab"
+            android:drawableTop="@drawable/tab_contrast"
+            android:text="@string/contrast"/>
+
+        <RadioButton
+            android:id="@+id/main_news"
+            style="@style/MainBottomTab"
+            android:drawableTop="@drawable/tab_news"
+            android:text="@string/news"/>
+
+        <RadioButton
+            android:id="@+id/main_my"
+            style="@style/MainBottomTab"
+            android:drawableTop="@drawable/tab_my"
+            android:text="@string/my"/>
+    </RadioGroup>
+</LinearLayout>
